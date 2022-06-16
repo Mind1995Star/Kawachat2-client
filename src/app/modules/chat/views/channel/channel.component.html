@@ -1,0 +1,21 @@
+<div class="msg-list " *ngIf="chatService.activeChat"  #list [scrollTop]="list.scrollHeight">
+
+  <div class="columns is-mobile" *ngFor="let m of chatService.activeChat.msgList">
+
+    <div [ngClass]="{' is-offset-1 me': m.usr == commonService.username}" class="chat-bubble column is-10">
+      <p ><b>{{m.usr}}</b>: {{m.msg}} </p>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div class="columns chat-bar">
+  <div class="column is-10">
+    <input (keyup.enter)="send()"  class="input" [(ngModel)] = 'currentMsg'>
+  </div>
+  <div class="column is-2" >
+    <button class="button is-success" (click)="send()"  > SEND </button>
+  </div>
+</div>

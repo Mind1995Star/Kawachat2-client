@@ -1,0 +1,42 @@
+<section class="hero  is-blue is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+
+        <div class="column is-4 is-offset-4">
+          <span>
+               <img src="/assets/images/logo.png" style="width: 50%; height: 50%" >
+          </span>
+
+
+          <div class="box">
+            <h1 class="title">
+              Join a channel
+            </h1>
+            <label class="label">User name</label>
+            <p class="control">
+              <input [(ngModel)]="username" class="input" type="text">
+            </p>
+            <label class="label">Channel</label>
+            <p class="control">
+              <input (keyup.enter) ="join()"  [(ngModel)]="frq" class="input" type="text">
+            </p>
+
+            <hr>
+            <p class="control is-clearfix">
+              <button  (click)="join()" class="button is-success is-pulled-right">JOIN</button>
+            </p>
+          </div>
+          <p class="ftr" >
+            <a  href="https://github.com/avatsaev/kawachat2-client" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            KawaChat 2 is an open source project available on GitHub
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
