@@ -1,7 +1,6 @@
 # Kawachat 2 PWA
 
 
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Simple Angular 4 chat app with socket.io 
